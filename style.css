@@ -1,0 +1,60 @@
+
+.parent-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background: url("./background.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.heading {
+    text-align: center;
+    color: floralwhite;
+    padding: 30px 0px;
+    font-size: 55px;
+}
+.clock-container {
+    display: flex;
+    flex-direction: row;
+}
+.time {
+    min-height: 150px;
+    min-width: 150px;
+    border-radius: 5px;
+    background-color: rgb(101, 101, 211, 0.7);
+    color: wheat;
+    padding: 20px;
+    margin-right: 40px;
+}
+.hour {
+    min-height: 100px;
+    font-size: 80px;
+}
+.digit {
+    font-size: 80px;
+    color: wheat;
+}
+.hour-lable {
+    text-align: center;
+    border-top: 2px solid slateblue;
+}
+@media screen and (max-width: 640px) {
+    .clock-container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    .time {
+        margin-top: 20px;
+    }
+    .heading {
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 0;
+    }
+}
